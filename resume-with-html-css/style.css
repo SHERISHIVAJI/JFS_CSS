@@ -1,0 +1,42 @@
+body {
+    background-color: #f4f6f8;
+    color: black;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    background-color: aquamarine;
+}
+h3 {
+    font-size: 28px;
+}
+header, section {
+    max-width: 900px;
+    margin: auto;
+    /* background: #ffffff; */
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+section {
+    background-color: honeydew;
+}
+
+h4 {
+    background-color: rgb(189, 187, 187);
+    border-radius: 5px;
+    padding: 5px;
+}
+p{
+    text-align: justify;
+}
+
+#projects {
+    background-color: rgb(195, 254, 254);
+}
+
+a {
+    color: blue;
+}
