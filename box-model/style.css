@@ -1,0 +1,20 @@
+.container {
+    /* border: 2px solid black; */
+    height: 600px;
+    margin: 100px;
+    padding: 20px;
+    text-align: center;
+}
+
+.child-container {
+    /* border: 2px solid green; */
+    width: 22%;
+    display: inline-block;
+    margin: 5px;
+    
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
