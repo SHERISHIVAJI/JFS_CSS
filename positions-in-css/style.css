@@ -1,0 +1,41 @@
+.container {
+    width: 100%;
+    position: relative;
+}
+img {
+    width: 100%;
+    border-bottom-right-radius: 10px;
+}
+.container h1 {
+    position: absolute;
+    top: 45%;
+    /* margin: 0; */
+    left: 40%;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.container > div {
+    width: 100%;
+    /* border: 2px solid; */
+}
+
+.project-container {
+    width: 23%;
+    display: inline-block;
+    position: relative;
+    padding: 12px;
+}
+
+h2 {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    margin: 0;
+    background-color: rgb(36, 35, 35);
+    color: white;
+    padding: 5px;
+    border-bottom-right-radius: 5px;
+}
