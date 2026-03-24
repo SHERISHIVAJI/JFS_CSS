@@ -1,0 +1,54 @@
+.persons {
+    height: 100px;
+    /* border: 2px solid; */
+    margin-left: 1%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 5px;
+    width: 98%;
+}
+
+.persons div {
+    height: 100%;
+}
+
+.pic {
+    width: 25%;
+    text-align: center;
+}
+
+.pic, .profile-name {
+    display: inline-block;
+    height: 90px;
+}
+
+.profile-name {
+    width: 66%;
+    position: absolute;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.profile-name h3{
+    position: absolute;
+    top: 15px;
+    margin: 0;
+}
+
+.profile-name p {
+    position: absolute;
+    top: 30px;
+    
+}
+
+.persons img {
+    margin-top: 10px;
+    width: 80px;
+    border-radius: 50%;
+    height: 80px;
+    border: 1px solid;
+}

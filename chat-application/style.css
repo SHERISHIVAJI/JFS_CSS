@@ -1,0 +1,157 @@
+.main-container {
+    width: 400px;
+    height: 650px;
+    border: 3px solid;
+    position: relative;
+    top: 20px;
+    left: 35%;
+    border-radius: 10px;
+    position: relative;
+}
+
+body {
+    background-color: rgb(119, 118, 118);
+}
+
+/* =========HEADER======== */
+
+.header {
+    height: 10%;
+    position: fixed;
+    width: 400px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post, .title, .likes {
+    display: inline-block;
+    text-align: center;
+    margin: 15px;
+}
+
+.post {
+    width: 20%;
+    position: absolute;
+    top: 0px;
+    padding: 5px;
+}
+
+.title {
+    width: 50%;
+    position: absolute;
+    left: 20%;
+}
+
+.title h2 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.title h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.likes {
+    width: 20%;
+    position: absolute;
+    left: 70%;
+    padding: 5px;
+}
+
+/* ========BODY============ */
+
+.body {
+    height: 84%;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    background-color: rgb(226, 225, 225);
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+
+.recent {
+    width: 80%;
+    /* border: 2px solid; */
+    height: 95%;
+    margin-left: 9%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.posts img {
+    width: 100%;
+}
+
+.post-data {
+    position: relative;
+    height: 10px;
+}
+
+.post-data div {
+    display: inline-block;
+    margin: 5px;
+}
+
+#save {
+    position: absolute;
+    right: 0;
+}
+
+#post-text {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* ============= FOOTER ========== */
+
+.footer {
+    height: 8%;
+    position: fixed;
+    background-color: white;
+    bottom: 51px;
+    width: 400px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.footer .home, .reels, .chats, .profile {
+    display: inline-block;
+    position: absolute;
+}
+
+.home {
+    width: 20%;
+    left: 0;
+    bottom: 25px;
+}
+
+.reels {
+    width: 20%;
+    left: 25%;
+    bottom: 25px;
+}
+
+.chats {
+    width: 20%;
+    left: 50%;
+    bottom: 25px;
+}
+
+.profile {
+    width: 20%;
+    right: 0;
+    top: 14px;
+}
+
+.profile img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
