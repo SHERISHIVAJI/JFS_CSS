@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+}
+/* ========================================== */
+.main {
+    width: 99%;
+    height: 700px;
+    border: 2px solid;
+    background-color: black;
+    color: white;
+}
+
+/* ======================================== */
+
+.main .verification {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#verify {
+    color: green;
+}
+
+#view {
+    background-color: lightgray;
+    padding: 5px;
+    border-radius: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =============================================== */
+
+.participants {
+    display: flex;
+    /* border: 2px solid white; */
+    height: 550px;
+    padding: 10px;
+    color: gray;
+}
+
+.participants .part-full {
+    border: 2px solid yellow;
+    border-radius: 5px;
+    text-align: center;
+    width: 70%;
+    position: relative;
+}
+
+.part-full i {
+    font-size: 400px;
+}
+
+.part-full p {
+    position: absolute;
+    margin: 0;
+    bottom: 1px;
+    left: 1px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: gray;
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.participants .list-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    /* border: 2px solid yellow; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.list-part .users {
+    height: 30%;
+    background-color: lightgray;
+    color: gray;
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+}
+
+.users > i {
+    font-size: 150px;
+}
+
+.users .user-details {
+    position: absolute;
+    bottom: 1px;
+    display: flex;
+    margin: 0;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.user-details i {
+    color: red;
+    margin-right: 5px;
+}
+
+/* ===================================== */
+
+.host-access {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    /* border: 2px solid white; */
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.host-access .screen-share i, .host-access .screen-share p{
+    color: green;
+}
+
+.host-access p {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.host-access .access-items {
+    position: relative;
+    width: 8%;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* background-color: red; */
+}
+
+.host-access span {
+    position: absolute;
+    right: 2px;
+}
+
+.access-items b {
+    background-color: red;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+}
