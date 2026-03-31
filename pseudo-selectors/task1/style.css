@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 700px;
+    height: 700px;
+    border: 2px solid;
+    position: relative;
+    color: white;
+}
+
+.top {
+    /* width: 100%; */
+    height: 50px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-around;
+    background-color: gray;
+}
+
+.bottom {
+    height: 50px;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: absolute;
+    width: 600px;
+    bottom: 0;
+    background-color: gray;
+}
+
+.left {
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    /* height: 600px; */
+    /* border: 2px solid yellow; */
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* align-content: space-around ; */
+}
+
+.right {
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    bottom: 50px;
+    /* border: 2px solid aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+}
+
+.play-area {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;
+    /* border: 2px solid black; */
+    /* background-color: red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rows {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    /* height: 75px; */
+    background-color: lightgray;
+}
+
+.cols {
+    width: 75px;
+    height: 75px;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px 0 white;
+}
+
+.odd>.cols:nth-child(even), .even>.cols:nth-child(odd) {
+    background-color: gray;
+}
+
+.cols img {
+    /* width: 55px;
+    height: 55px; */
+    width: 80%;
+    height: 80%;
+    transition: all 1s ease;
+}
+
+.cols img:hover {
+    width: 90%;
+    height: 90%;
+    background-color: lightblue;
+    box-shadow: 0 2px 5px 0 black;
+}
