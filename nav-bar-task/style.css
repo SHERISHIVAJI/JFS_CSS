@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 5px 0 gray;
+    padding: 15px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+nav .logo {
+    width: 20%;
+}
+
+nav .links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 80%;
+}
+
+nav .links p {
+    padding: 5px;
+    /* font-size: 18px;   */
+}
+
+nav .links p:hover {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    background-color: red;
+    padding: 10px;
+    border-radius: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+#menu {
+    font-size: 2em;
+    display: none;
+}
+
+@media screen and (width < 600px) {
+    .links p {
+        display: none;
+    }
+    nav .logo {
+        width: 100%;
+    }
+    .login {
+        background-color: blue;
+    }
+    #menu {
+        display: block;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (width < 900px) {
+    header {
+        font-size: 14px;
+        padding-right: 0;
+    }
+}
