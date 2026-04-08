@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 2fr);
+    grid-template-rows: 100px 200px 200px 100px;
+    gap: 10px;
+    font-size: 2em;
+}
+
+.items {
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid lightgray;
+    box-shadow: 0 2px 5px 0 gray;
+}
+
+.header {
+    grid-column: 1/4;
+}
+
+.side-bar {
+    grid-row: 2/4;
+}
+
+.content-1 {
+    grid-column: 2/4;
+}
+
+.footer {
+    grid-column: 1/4;
+}
