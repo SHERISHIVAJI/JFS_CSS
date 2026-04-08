@@ -1,0 +1,23 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 10px;
+}
+
+.items {
+    background-color: gray;
+    font-size: 18px;
+    text-align: center;
+}
+
+.item-1 {
+    grid-row: 1/4;
+}
+.item-2 {
+    grid-column: 2/4;
+}
+.item-6 {
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
