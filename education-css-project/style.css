@@ -308,7 +308,7 @@
     .wrapper .second-set-animation .text-titles {
         animation-delay: 5s;
     }
-    h1 {
+    .join h1 {
         font-size: 2em;
     }
 }
