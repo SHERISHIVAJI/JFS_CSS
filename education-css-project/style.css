@@ -308,6 +308,9 @@
     .wrapper .second-set-animation .text-titles {
         animation-delay: 5s;
     }
+    h1 {
+        font-size: 2em;
+    }
 }
 
 #about .intro-images .items img {
@@ -1659,4 +1662,3 @@ footer {
 .copy-right .socials i:hover {
     color: salmon;
 }
-
