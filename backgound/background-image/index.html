@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 2px solid;
+        }
+
+        .url {
+            background-image: url(./1770298735099.png);
+            width: 100%;
+            height: 1000px;
+        }
+
+        .none {
+            background-image: none;
+        }
+
+        
+
+        .conic-gradient1 {
+            background-image: conic-gradient(red, blue, yellow, green);
+        }
+
+        .conic-gradient2 {
+            background-image: conic-gradient(red, yellow, green, blue, black);
+        }
+
+        .conic-gradient3 {
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg)
+        }
+
+        .conic-gradient4 {
+            background-image: conic-gradient(red, yellow, green, blue, black);
+            border-radius: 50%;
+        }
+
+        .conic-gradient5 {
+            background-image: conic-gradient(from 90deg, red, yellow, green);
+            border-radius: 50%;
+        }
+
+        .conic-gradient6 {
+            background-image: conic-gradient(at 90% 80%, red, yellow, green);
+            border-radius: 50%;
+        }
+
+        .conic-gradient7 {
+            background-image: conic-gradient(from 180deg at 80%, red, yellow, green);
+            border-radius: 50%;
+        }
+
+        .conic-gradient8 {
+            background-image: conic-gradient(red 0deg, red 80deg, yellow 120deg, yellow 150deg, green 200deg);
+            border-radius: 50%;
+        }
+
+        .linear-gradient1 {
+            background-image: linear-gradient(red, blue);
+        }
+
+        .linear-gradient2 {
+            background-image: linear-gradient(to right, red, blue);
+        }
+
+        .linear-gradient3 {
+            background-image: linear-gradient(to bottom right, red, blue);
+        }
+
+        .linear-gradient4 {
+            background-image: linear-gradient(120deg, red, blue);
+        }
+
+        .linear-gradient5 {
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+        }
+
+        .linear-gradient6 {
+            background: linear-gradient(to right,
+                    red 17%,
+                    orange 17% 34%,
+                    yellow 34% 51%,
+                    green 51% 68%,
+                    blue 68% 84%,
+                    indigo 84%);
+        }
+
+        .linear-gradient7 {
+            background-image: linear-gradient(to right, rgba(0,255,0,1) 70%, rgba(255,0,0,1));
+        }
+
+        .radial-gradient1 {
+            width: 300px;
+            background-image: radial-gradient(red, green, blue);
+        }
+        .radial-gradient2 {
+            width: 300px;
+            background-image: radial-gradient(circle, red, green, blue);
+        }
+        .radial-gradient3 {
+            width: 300px;
+            background-image: radial-gradient(red 5%, green 15%, blue 60%);
+        }
+        .radial-gradient4 {
+            width: 300px;
+            background-image: radial-gradient(closest-side at 60% 55%, blue, green, yellow, black);
+        }
+        .radial-gradient5 {
+            width: 300px;
+            background-image: radial-gradient(farthest-side at 60% 55%, blue, green, yellow, black);
+        }
+        .radial-gradient6 {
+            width: 300px;
+            background-image: radial-gradient(farthest-corner at 60% 55%, blue, green, yellow, black);
+        }
+        .radial-gradient7 {
+            width: 300px;
+            background-image: radial-gradient(closest-corner at 60% 55%, blue, green, yellow, black);
+        }
+        .radial-gradient8 {
+            width: 300px;
+            background-image: radial-gradient(at 70% 30%,red, green, blue);
+        }
+        .repeating-conic-gradient1 {
+            background-image: repeating-conic-gradient(red, green, yellow);
+        }
+        .repeating-conic-gradient2 {
+            background-image: repeating-conic-gradient(red 0 30deg, green 30deg 60deg, yellow 60deg 90deg);
+        }
+        .repeating-conic-gradient3 {
+            background-image: repeating-conic-gradient(from 0 at 50% 30%, red 10deg 20deg, green 40deg 50deg, yellow 70deg 80deg);
+        }
+        .repeating-conic-gradient4 {
+            background-image: repeating-conic-gradient(from 10deg at 30% 30%, red 0 30deg, yellow 30deg 60deg, blue 60deg 90deg);
+        }
+        .repeating-linear-gradient1 {
+            background-image: repeating-linear-gradient(red, green, blue);
+        }
+        .repeating-linear-gradient2 {
+            background-image: repeating-linear-gradient(315deg, red, green 10%, blue 20%);
+        }
+        .repeating-linear-gradient3 {
+            background-image: repeating-linear-gradient(190deg, red, blue 7%, green 10%);
+        }
+        .repeating-linear-gradient4 {
+            background-image: repeating-linear-gradient(90deg, red, blue 7%, green 10%);
+        }
+        .repeating-linear-gradient5 {
+            background-image: repeating-linear-gradient(45deg, red, green 10%, blue 20%);
+        }
+        .repeating-radial-gradient1 {
+            background-image: repeating-radial-gradient(red, green, blue);
+        }
+        .repeating-radial-gradient2 {
+            width: 300px;
+            background-image: repeating-radial-gradient(ellipse farthest-corner at 25% 25%, red, yellow 10%, green 15%);
+        }
+        .repeating-radial-gradient3 {
+              background-image: repeating-radial-gradient(red 0% 10%, yellow 11% 21%, green 22% 32%);
+        }
+        .conic,
+        .linear,
+        .radial,
+        .repeating-conic,
+        .repeating-linear,
+        .repeating-radial {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 20px;
+            height: 100%;
+        }
+    </style>
+
+    <div class="url">URL</div>
+    <br>
+    <div class="none">
+        NONE
+    </div>
+    <br>
+    <div class="conic">conic-gradient()
+        <div class="conic-gradient1"></div>
+        <div class="conic-gradient2"></div>
+        <div class="conic-gradient3"></div>
+        <div class="conic-gradient4"></div>
+        <div class="conic-gradient5"></div>
+        <div class="conic-gradient6"></div>
+        <div class="conic-gradient7"></div>
+        <div class="conic-gradient8"></div>
+    </div>
+    <br>
+    <div class="linear">linear-gradient()
+        <div class="linear-gradient1"></div>
+        <div class="linear-gradient2"></div>
+        <div class="linear-gradient3"></div>
+        <div class="linear-gradient4"></div>
+        <div class="linear-gradient5"></div>
+        <div class="linear-gradient6"></div>
+        <div class="linear-gradient7"></div>
+    </div>
+    <br>
+    <div class="radial">radial-gradient()
+        <div class="radial-gradient1"></div>
+        <div class="radial-gradient2"></div>
+        <div class="radial-gradient3"></div>
+        <div class="radial-gradient4"></div>
+        <div class="radial-gradient5"></div>
+        <div class="radial-gradient6"></div>
+        <div class="radial-gradient7"></div>
+        <div class="radial-gradient8"></div>
+    </div>
+    <br>
+    <div class="repeating-conic">repeating-conic-gradient()
+        <div class="repeating-conic-gradient1"></div>
+        <div class="repeating-conic-gradient2"></div>
+        <div class="repeating-conic-gradient3"></div>
+        <div class="repeating-conic-gradient4"></div>
+    </div>
+    <br>
+    <div class="repeating-linear">repeating-linear-gradient()
+        <div class="repeating-linear-gradient1"></div>
+        <div class="repeating-linear-gradient2"></div>
+        <div class="repeating-linear-gradient3"></div>
+        <div class="repeating-linear-gradient4"></div>
+        <div class="repeating-linear-gradient5"></div>
+    </div>
+    <br>
+    <div class="repeating-radial">repeating-radial-gradient()
+        <div class="repeating-radial-gradient1"></div>
+        <div class="repeating-radial-gradient2"></div>
+        <div class="repeating-radial-gradient3" style="width: 500px; height: 400px;">
+            <div class="inherit" style="background-image: inherit;"></div>
+        </div>        
+    </div>
+    <br>
+    <div style="background-image: initial;" class="initial">
+        
+    </div>
+    <style>
+        
+    </style>
+</body>
+
+</html>
