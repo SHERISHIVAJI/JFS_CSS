@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div {
+            background-color: lightblue;
+            padding: 50px;
+            border: 10px solid transparent;
+            margin: 20px;
+        }
+        .border-box {
+            background-clip: border-box;
+        }
+        .padding-box {
+            background-clip: padding-box;
+        }
+        .content-box {
+            border: 2px solid;
+            background-clip: content-box;
+        }
+
+    </style>
+    <div class="border-box">
+        border-box
+    </div>
+    <div class="padding-box">
+        padding-box
+    </div>
+    <div class="content-box">
+        content-box
+    </div>
+</body>
+</html>
