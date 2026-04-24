@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-repeat</title>
+</head>
+<body>
+    <style>
+        div{
+            width: 1500px;
+            height: 1000px;
+            border: 2px solid;
+            margin-bottom: 20px;
+            background-image: url(./1770298735099.png);
+        }
+        .repeat {
+            background-repeat: repeat;
+        }
+        .repeat-x{
+            background-repeat: repeat-x;
+        }
+        .repeat-y {
+            background-repeat: repeat-y;
+        }
+        .no-repeat {
+            background-repeat: no-repeat;
+        }
+        .space {
+            background-repeat: space;
+        }
+        .round{
+            background-repeat: round;
+        }
+        .initial {
+            background-repeat: initial;
+        }
+        .inherit {
+            background-repeat: inherit;
+        }
+    </style>
+    <div class="repeat"></div>
+    <div class="repeat-x"></div>
+    <div class="repeat-y"></div>
+    <div class="no-repeat"></div>
+    <div class="space"></div>
+    <div class="round">
+        <div class="inherit" style="width: 1000px; height: 500px;"></div>
+    </div>
+    <div class="initial"></div>
+</body>
+</html>
