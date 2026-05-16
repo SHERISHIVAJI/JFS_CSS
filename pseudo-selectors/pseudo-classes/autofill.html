@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:autofill {
+  border: 10px solid red;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :autofill</h1>
+
+<p>Click on the input fields and choose any option suggested by the browser:</p>
+
+<form>
+<label for="name">Name: </label><br>
+<input id="name" name="name" type="text" autocomplete="name" /><br>
+
+<label for="email">Email: </label><br>
+<input id="email" name="email" type="email" autocomplete="email" /><br>
+
+<label for="home-address">Home Address:</label><br>
+<input name="address" type="text" autocomplete="street-address"><br>
+
+<label for="country">Country: </label><br>
+<input id="country" name="country" type="text" autocomplete="country-name" />
+</form>
+
+</body>
+</html>

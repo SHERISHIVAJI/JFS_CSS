@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Focusing the button with a keyboard shows a solid red line. */
+button:focus-visible {
+  outline: 2px solid red;
+}
+  
+/* Focusing the button with a mouse or touch shows a drop shadow. */
+button:focus {
+  box-shadow: 1px 1px 6px rgba(255, 0, 0, 0.5);
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :focus-visible</h1>
+
+<p>Use the keyboard to tab to the button.</p>
+<p>Then use the mouse to click the button.</p>
+
+<button>Click me</button>
+
+</body>
+</html>

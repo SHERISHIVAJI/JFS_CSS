@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* Selects every fourth element among any group of siblings */
+    :nth-child(3) {
+      background-color: yellow;
+    }
+
+    /* Selects the second element of div siblings */
+    div:nth-child(2) {
+      background-color: green;
+    }
+
+    /* Selects the second li element in a list */
+    li:nth-child(2) {
+      background-color: lightgreen;
+    }
+
+    /* p:nth-child(odd) {
+      background-color: red;
+    }
+
+    p:nth-child(even) {
+      background-color: lightgreen;
+    } */
+
+    /* p:nth-child(3n+1) {
+      background-color: red;
+    } */
+
+    /* p:nth-child(3n-1) {
+      background-color: red;
+    } */
+  </style>
+</head>
+
+<body>
+
+
+
+
+  <h1>Demo of :nth-child</h1>
+
+  <p>The first paragraph.</p>
+  <p>The second paragraph.</p>
+  <p>The third paragraph.</p>
+  <p>The fourth paragraph.</p>
+  <p>The fifth paragraph.</p>
+
+  <h1>Demo of :nth-child</h1>
+
+  <div>
+    <p>This is some text.</p>
+  </div>
+
+  <div>
+    <p>This is some text.</p>
+  </div>
+
+  <div>
+    <p>This is some text.</p>
+  </div>
+
+  <ul>
+    <li>First list item</li>
+    <li>Second list item</li>
+    <li>Third list item</li>
+    <li>Fourth list item</li>
+    <li>Fifth list item</li>
+  </ul>
+
+</body>
+
+</html>

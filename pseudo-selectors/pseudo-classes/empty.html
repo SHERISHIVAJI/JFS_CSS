@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.box {
+  background-color: lightgreen;
+  height: 90px;
+  width: 90px;
+}
+
+.box:empty {
+  background-color: salmon;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :empty</h1>
+
+<div class="box"></div><br>
+<div class="box">I will be lightgreen.</div><br>
+<div class="box"><!-- I will be salmon --></div><br>
+<div class="box"> <!-- I will be lightgreen --> </div>
+
+</body>
+</html>

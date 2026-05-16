@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+input:indeterminate {
+  box-shadow: 0 0 5px 3px red;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :indeterminate</h1>
+
+<h3>Indeterminated Checkbox</h3>
+<p>The checkbox below is in an indeterminate state (by JavaScript). If you click on it, it is no longer indeterminated.</p>
+<p>Note that an indeterminate checkbox has a "-" icon, rather than a checkmark or an empty box.</p>
+
+<input type="checkbox" id="myCheckbox"> Checkbox
+
+<h3>Indeterminated Radio buttons</h3>
+<p>Radio buttons are in an indeterminate state when all radio buttons with the same name value in the form are unchecked</p>
+
+<form>
+<input type="radio" id="radio1" name="rB" value="val1" />
+<label for="radio1">First radio button</label><br>
+<input type="radio" id="radio2" name="rB" value="val2" />
+<label for="radio2">Second radio button</label>
+</form>
+
+<script>
+// Make the checkbox indeterminate via JavaScript
+const checkbox = document.getElementById("myCheckbox");
+checkbox.indeterminate = true;
+</script>
+
+</body>
+</html>

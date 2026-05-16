@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+fieldset:invalid {
+  border: 2px solid red;
+  background-color: beige;
+}
+
+input:invalid {
+  border: 2px solid red;
+  background-color: beige;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :invalid</h1>
+
+<p>Try typing a legal e-mail address to see the styling disappear.</p>
+<p>Also select one of the radio buttons to see the styling disappear.</p>
+<p>Try typing a legal numbere to see the styling disappear.</p>
+
+<form>
+<label for="name">Name: </label><br>
+<input id="name" name="name" type="text" /><br>
+<label for="email">Email: </label><br>
+<input id="email" name="email" type="email" value="supportEmail" />
+<br><br>
+
+<fieldset>
+  <legend>Select gender:</legend>
+  <label><input name="gender" type="radio" value="male" required> Male</label>
+  <label><input name="gender" type="radio" value="female" required> Female</label>
+  <label><input name="gender" type="radio" value="other" required> Other</label>
+</fieldset>
+
+<p>Input a number between 1 and 10: <input type="number" min="1" max="10" value="17"></p>
+</form>
+
+</body>
+</html>

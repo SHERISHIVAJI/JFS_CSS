@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:valid {
+  background-color: beige;
+  border: 2px solid green;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :valid</h1>
+
+<p>Try typing an illegal e-mail address to see the styling disappear.</p>
+<p>Try typing an illegal numbere to see the styling disappear.</p>
+
+<form>
+  <label for="email">Email: </label><br>
+  <input id="email" name="email" type="email" value="test@example.com" />
+  <p>Input a number between 1 and 10: <input type="number" min="1" max="10" value="10"></p>
+</form>
+
+</body>
+</html>

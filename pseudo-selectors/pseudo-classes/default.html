@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input:default {
+  box-shadow: 0 0 2px 2px red;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :default</h1>
+
+<p>The :default selector selects the default form element in a group of related elements.</p>
+<p>The "male" radio button and the "bike" checkbox are checked by default:</p>
+
+<form>
+<p>Select gender:</p>
+<label><input name="gender" type="radio" value="male" checked> Male</label>
+<label><input name="gender" type="radio" value="female"> Female</label>
+<label><input name="gender" type="radio" value="other"> Other</label>
+
+<p>Select transport:</p>
+<label><input name="bike" type="checkbox" checked>I have a bike</label>
+<label><input name="car" type="checkbox">I have a car</label> 
+</form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:read-only {
+  background-color: lightgray;
+  border: 0;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :read-only</h1>
+
+<p>The :read-only selector selects elements with a "readonly" attribute:</p>
+
+<form>
+<label for="name">Name: </label><br>
+<input id="name" name="name" type="text" /><br>
+
+<label for="email">Email: </label><br>
+<input id="email" name="email" type="email" /><br>
+
+<label for="country">Country: </label><br>
+<input id="country" name="country" type="text" value="Norway" readonly />
+</form>
+
+</body>
+</html>

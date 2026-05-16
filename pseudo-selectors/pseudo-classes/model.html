@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:modal {
+  background-color: gold;
+  border: 2px solid maroon;
+  border-radius: 5px;
+  font-size: 20px;  
+}
+
+button {
+  padding: 10px;
+  font-size: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :modal</h1>
+
+<p>Click on the "Open Modal" button to open the modal.</p>
+
+<button id="showModal">Open Modal</button>
+
+<dialog id="myModal">
+  <form method="dialog">
+    <p>This is a modal dialog.</p>
+    <button>Close modal</button>
+  </form>
+</dialog>
+
+
+<script>
+const myModal = document.getElementById('myModal');
+showModal.addEventListener('click', () => {
+  myModal.showModal();
+});
+</script>
+
+</body>
+</html>

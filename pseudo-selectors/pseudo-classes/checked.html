@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input:checked {
+  outline: 1px solid red;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :checked</h1>
+
+<form>
+<p>Select gender:</p>
+<label><input name="gender" type="radio" value="male" checked> Male</label>
+<label><input name="gender" type="radio" value="female"> Female</label>
+<label><input name="gender" type="radio" value="other"> Other</label>
+
+<p>Select transport:</p>
+<label><input name="bike" type="checkbox" checked>I have a bike</label>
+<label><input name="car" type="checkbox">I have a car</label> 
+</form>
+
+</body>
+</html>

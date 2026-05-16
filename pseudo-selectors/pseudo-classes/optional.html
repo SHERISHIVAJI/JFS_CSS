@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:optional {
+  background-color: lightgreen;
+}
+
+input:required {
+  background-color: pink;
+  border-color: red;
+}
+
+.req {
+  color: red;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of :optional and :required</h1>
+
+<form>
+<label for="name">Name: </label><br>
+<input id="name" name="name" type="text" /><br>
+
+<label for="email">Email: <span class="req">*</span></label><br>
+<input id="email" name="email" type="email" required /><br>
+
+<label for="country">Country: </label><br>
+<input id="country" name="country" type="text" />
+
+<p><span class="req">*</span> Required field</p>
+</form>
+
+</body>
+</html>
