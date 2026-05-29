@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /*p::before {
+            content: "Read this -";
+        }
+
+        p#hometown::before {
+            content: normal;
+        }*/
+
+        /*p::before {
+            content: "Read this -";
+        }
+
+        p#hometown::before {
+            content: none;
+        }*/
+        p {
+            counter-increment: myIndex;
+        }
+
+        p::before {
+            content: counter(myIndex);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <p>My name is Donald</p>
+    <p id="hometown">I live in Ducksburg</p> -->
+
+    <p> First make a variable (myIndex) and make it increase every time a p element occurs.</p>
+    <p> Then insert the counter in front of all p elements</p>
+
+</body>
+
+</html>
