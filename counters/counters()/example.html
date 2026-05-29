@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ol {
+  counter-reset: section;
+  list-style-type: none;
+}
+
+li::before {
+  counter-increment: section;
+  content: counters(section, "-", lower-alpha) " ";
+}
+</style>
+</head>
+<body>
+
+<h1>The counters() Function</h1>
+
+<p>Here we use the counters() function to insert a string between different levels of nested counters:</p>
+
+<ol>
+  <li>item</li>
+  <li>item   
+  <ol>
+    <li>item</li>
+    <li>item</li>
+    <li>item
+    <ol>
+      <li>item</li>
+      <li>item</li>
+      <li>item</li>
+    </ol>
+    </li>
+    <li>item</li>
+  </ol>
+  </li>
+  <li>item</li>
+  <li>item</li>
+</ol>
+
+</body>
+</html>
