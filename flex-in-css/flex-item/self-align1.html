@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 60%;
+  aspect-ratio: 3/2;
+  border: solid black 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#container > div {
+  width: 60%;
+  aspect-ratio: 2;
+  margin: 2px;
+  
+}
+
+.normalDiv {
+  background-color: lightgreen;
+}
+
+#myDiv {
+  border: solid black 3px;
+  background-color: coral;
+  align-self: end;
+}
+</style>
+</head>
+<body>
+
+<h1>The align-self Property</h1>
+
+<p>Place an individual grid item at the end of its grid cell in the block direction with the align-self property.</p>
+
+<div id="container">
+  <div class="normalDiv"></div>
+  <div id="myDiv">myDiv</div>
+  <div class="normalDiv"></div>
+  <div class="normalDiv"></div>
+</div>
+
+</body>
+</html>
