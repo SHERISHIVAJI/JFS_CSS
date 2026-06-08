@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+#myDiv1 {
+  transform: matrix(1, -0.3, 0, 1, 0, 50);
+}
+
+#myDiv2 {
+  transform: matrix(1, 0, 0.5, 1, 50, 50);
+}
+
+#myDiv3 {
+  transform: matrix(2, 1, 0.5, 1, 90, 70);
+}
+</style>
+</head>
+<body>
+
+<h1>The matrix() function</h1>
+
+<p>The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()).</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv1">
+Using the matrix() function.
+</div>
+
+<div id="myDiv2">
+Another use of the matrix() function.
+</div>
+
+<div id="myDiv3">
+Another use of the matrix() function.
+</div>
+
+</body>
+</html>
