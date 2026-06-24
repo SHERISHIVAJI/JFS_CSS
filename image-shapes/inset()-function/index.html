@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  color: green;
+  animation: mymove 5s infinite;
+  clip-path: inset(10% round 20px);
+}
+
+@keyframes mymove {
+  50% {clip-path: inset(50% round 50px);}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of clip-path and inset()</h1>
+
+<div id="myDIV">
+  <h1>myDIV</h1>
+</div>
+
+</body>
+</html>

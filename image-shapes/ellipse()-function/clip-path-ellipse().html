@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#myDIV {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  color: green;
+  animation: mymove 5s infinite;
+  clip-path: ellipse(80% 50%);
+}
+
+@keyframes mymove {
+  50% {clip-path: ellipse(30% 10%);}
+}
+</style>
+</head>
+<body>
+
+<h1>Animation of clip-path and ellipse()</h1>
+
+<div id="myDIV" style="margin-left: 100px;">
+  <h1>myDIV</h1>
+</div>
+
+</body>
+</html>
