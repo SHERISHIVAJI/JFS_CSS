@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.image-container {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+</style>
+</head>
+<body>
+
+<h2>Using object-fit: fill</h2>
+
+<p>The object-fit: fill; value does not preserve the aspect ratio, and the image is resized to fill the container (the image will be stretched or squeezed to fit):</p>
+
+<div class="image-container">
+  <img src="./images/1780541957243.jpg" alt="Paris" width="400" height="300">
+</div>
+
+<div class="image-container">
+  <img src="./images/1780542223500.jpg" alt="Pineapple" width="300" height="300">
+</div>
+
+</body>
+</html>
