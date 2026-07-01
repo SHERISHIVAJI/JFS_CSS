@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            width: 500px;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .mask1 {
+            mask-image: url(./images/w3schools-removebg-preview.png);
+            mask-size: 70%;
+            mask-repeat: no-repeat;
+            mask-mode: match-source;
+        }
+
+        .mask2 {
+            mask-image: url(./images/w3schools-removebg-preview.png);
+            mask-size: 70%;
+            mask-repeat: no-repeat;
+            mask-mode: luminance;
+        }
+
+        .mask3 {
+            mask-image: url(./images/w3schools-removebg-preview.png);
+            mask-size: 70%;
+            mask-repeat: no-repeat;
+            mask-mode: alpha;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h1>The mask-mode Property</h1>
+
+        <h3>Let the mask layer image be treated as an match-source mask:</h3>
+        <div class="mask1">
+            <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+        </div>
+
+
+        <h3>Let the mask layer image be treated as a luminance mask:</h3>
+        <div class="mask2">
+            <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+        </div>
+
+        <h3>Let the mask layer image be treated as an alpha mask:</h3>
+        <div class="mask3">
+            <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+        </div>
+
+        <h3>Original image:</h3>
+        <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+    </div>
+</body>
+
+</html>

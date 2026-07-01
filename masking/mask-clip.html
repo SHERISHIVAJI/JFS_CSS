@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .masked {
+            width: 150px;
+            height: 150px;
+            background: green;
+            border: 30px solid blue;
+            padding: 20px;
+            mask-image: url(./images/w3schools-removebg-preview.png);
+            mask-size: 100% 100%;
+        }
+
+        .mask1 {
+            mask-clip: border-box;
+        }
+
+        .mask2 {
+            mask-clip: content-box;
+        }
+
+        .mask3 {
+            mask-clip: padding-box;
+        }
+
+        .mask4 {
+            mask-clip: fill-box;
+        }
+
+        .mask5 {
+            mask-clip: stroke-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <h1>The mask-clip Property</h1>
+
+        <h3>Set mask-clip: border-box:</h3>
+        <div class="masked mask1">
+            <img src="./images/1780541957243.jpg">
+        </div>
+
+        <h3>Set mask-clip: content-box:</h3>
+        <div class="masked mask2">
+            <img src="./images/1780541957243.jpg">
+        </div>
+
+        <h3>Set mask-clip: padding-box:</h3>
+        <div class="masked mask3">
+            <img src="./images/1780541957243.jpg">
+        </div>
+
+        <h3>Set mask-clip: fill-box:</h3>
+        <div class="masked mask4">
+            <img src="./images/1780541957243.jpg">
+        </div>
+
+        <h3>Set mask-clip: stroke-box:</h3>
+        <div class="masked mask5">
+            <img src="./images/1780541957243.jpg">
+        </div>
+
+        <h3>Original image:</h3>
+        <img src="./images/1780541957243.jpg">
+    </div>
+</body>
+
+</html>

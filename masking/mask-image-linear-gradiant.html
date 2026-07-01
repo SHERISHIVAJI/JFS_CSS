@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    div {
+      width: 500px;
+      height: 100%;
+    }
+    img {
+      width: 500px;
+      height: auto;
+    }
+
+    .mask1 {
+      mask-image: linear-gradient(black, transparent);
+    }
+
+    .mask2 {
+      mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+    }
+
+    .mask3 {
+      mask-image: radial-gradient(black 50%, rgba(0, 0, 0, 0.5) 50%);
+    }
+
+    .mask4 {
+      mask-image: conic-gradient(black 0, transparent 360deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+
+    <h1>The mask-image Property</h1>
+
+    <h3>An image with a mask layer (from top to bottom):</h3>
+    <div class="mask1">
+      <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+    </div>
+
+    <h3>An image with a mask layer (a circle):</h3>
+    <div class="mask2">
+      <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+    </div>
+
+    <h3>An image with a mask layer (an ellipse):</h3>
+    <div class="mask3">
+      <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+    </div>
+
+    <h3>A conic gradient as the mask layer:</h3>
+    <div class="mask4">
+      <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+    </div>
+
+    <h3>Original image:</h3>
+    <img src="./images/1780541957243.jpg" alt="Cinque Terre">
+
+  </div>
+</body>
+
+</html>

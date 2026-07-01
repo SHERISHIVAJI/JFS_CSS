@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.masked {
+  width: 200px;
+  height: 200px;
+  mask-repeat: no-repeat;
+  mask-size: 100%;
+  background: blue; 
+  mask-image: url(./images/w3schools-removebg-preview.png), radial-gradient(transparent 50%, black);
+}
+
+.mask1 {
+  mask-composite: add;
+}
+
+.mask2 {
+  mask-composite: subtract;
+}
+
+.mask3 {
+  mask-composite: intersect;
+}
+
+.mask4 {
+  mask-composite: exclude;
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-composite Property</h1>
+
+<h3>mask-composite: add;</h3>
+<div class="masked mask1"></div>
+
+<h3>mask-composite: subtract;</h3>
+<div class="masked mask2"></div>
+
+<h3>mask-composite: intersect;</h3>
+<div class="masked mask3"></div>
+
+<h3>mask-composite: exclude:</h3>
+<div class="masked mask4"></div>
+
+</body>
+</html>
