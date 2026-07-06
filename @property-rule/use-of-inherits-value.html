@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+@property --my-bg-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: lightgray;
+}
+
+div {
+  width: 300px;
+  height: 150px;
+  padding: 15px;
+  background-color: var(--my-bg-color);
+}
+
+.fresh {
+    --my-bg-color: #ff6347;
+}
+</style>
+</head>
+<body>
+
+<h1>The @property Rule</h1>
+
+<div>DIV1</div>
+<div class="fresh">DIV2 <div class="inner">Inner DIV</div> </div>
+
+</body>
+</html>
