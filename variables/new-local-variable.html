@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+:root {
+  --primary-bg-color: #1e90ff;
+  --primary-color: #ffffff; 
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+.container {
+  color: var(--primary-bg-color);
+  background-color: var(--primary-color);
+  padding: 15px;
+}
+
+.container h2 {
+  border-bottom: 2px solid var(--primary-bg-color);
+}
+
+.container .note {
+  --note-border-color: red; /* new local variable */
+  border: 1px solid var(--note-border-color);
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h1>New Local Variable</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+  <p class="note">This is a note!</p>
+</div>
+
+</body>
+</html>

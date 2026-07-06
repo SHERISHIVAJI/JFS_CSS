@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root {
+  --primary-bg-color: #1e90ff;
+  --primary-color: #ffffff; 
+}
+
+body {
+  background-color: var(--primary-bg-color);
+}
+
+.container {
+  --fontsize: 20px;
+  color: var(--primary-bg-color);
+  background-color: var(--primary-color);
+  padding: 15px;
+  font-size: var(--fontsize);
+}
+
+.container h2 {
+  border-bottom: 2px solid var(--primary-bg-color);
+}
+
+@media screen and (min-width: 450px) {
+  .container {
+    --fontsize: 40px;
+  }
+  :root {
+    --primary-bg-color: lightblue;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1>Using Variables in Media Queries</h1>
+
+<div class="container">
+  <h2>Lorem Ipsum</h2>
+  <p>When the browser's width is less than 450px, the font-size of this div is 20px. When it is 450px or wider, set the --fontsize variable value to 40px. Resize the browser window to see the effect.</p>
+</div>
+
+</body>
+</html>
