@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grid-container {
+  border: 1px solid black;
+  background-color: mintcream;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 60px 40px;
+}
+
+#grid-container > div {
+  border: 1px solid black;
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>The gap Property with grid</h1>
+
+<p>Use the <em>gap</em> property to specify the size of the gap between the rows and the columns.</p>
+<p>This grid has a 20px gap between the rows, and a 50px gap between the columns:</p>
+
+<div id="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>  
+  <div>8</div>  
+</div>
+
+</body>
+</html>

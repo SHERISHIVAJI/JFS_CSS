@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  height: 350px;
+  width: 60%;
+  border: solid black 1px;
+  display: grid;
+  place-content: space-around center;
+}
+
+#container > div {
+  inline-size: 40px;
+  block-size: 40px;
+  margin: 2px;
+  background-color: coral;
+}
+</style>
+</head>
+<body>
+
+<h1>The place-content Property with grid</h1>
+
+<p>Available extra space in the block direction is distributed evenly around each grid item, and the grid items are aligned to the center in the inline direction.</p>
+
+<div id="container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+</body>
+</html>

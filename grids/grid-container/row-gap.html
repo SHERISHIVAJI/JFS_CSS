@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+}
+
+#grid-container {
+  border: 1px solid black;
+  background-color: mintcream;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+}
+
+#grid-container > div {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h1>The row-gap Property</h1>
+<p>The row-gap property defines the gap between the grid rows:</p>
+
+<div id="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+</div>
+
+</body>
+</html>
