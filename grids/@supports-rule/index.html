@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+  float: left;
+  width: 100%;
+}
+
+@supports (display: flex) {
+  .container {
+    display: flex;
+    background-color: DodgerBlue;
+  }
+}
+
+.container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The @supports Rule</h1>
+
+<p>If the browser supports display: flex, the CSS inside the @supports rule will be applied. If not, the .container class outside the @supports rule will be applied:</p>
+
+<div class="container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+</div>
+
+</body>
+</html>
