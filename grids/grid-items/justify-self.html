@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#container {
+  width: 50%;
+  aspect-ratio: 2/1;
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+#container > div {
+  border: 1px solid black;
+}
+
+.blue {
+  background-color: lightblue;
+  width: 50%;
+  justify-self: right;
+}
+
+.red {
+  background-color: coral;
+  width: 40%;
+}
+
+.green {
+  background-color: lightgreen;
+  width: 60%;
+}
+</style>
+</head>
+<body>
+
+<h2>justify-items vs. justify-self</h2>
+
+<div id="container">
+  <div class="red">RED</div>
+  <div class="blue">BLUE</div>
+  <div class="green">GREEN</div>
+  <div class="red">RED</div>
+</div>
+
+</body>
+</html>

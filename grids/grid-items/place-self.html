@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#container {
+  width: 60%;
+  aspect-ratio: 1/2;
+  border: solid black 1px;
+  display: flex;
+  flex-wrap: wrap;
+  place-items: start;
+}
+
+#container > div {
+  padding: 40px;
+  margin: 2px;
+  
+}
+
+.normalDiv {
+  background-color: coral;
+}
+
+#myDiv {
+  border: solid black 3px;
+  background-color: lightgreen;
+  place-self: end stretch;
+}
+</style>
+</head>
+<body>
+
+<h1>The place-self Property with flexbox</h1>
+
+<p>When placing an individual flexbox item with the place-self property, the second value for justify-self will be ignored.</p>
+<p><strong>Note: </strong> place-self property overwrites place-items property.</p>
+
+<div id="container">
+  <div class="normalDiv"></div>
+  <div class="normalDiv"></div>
+  <div id="myDiv"></div>
+  <div class="normalDiv"></div>
+  <div class="normalDiv"></div>
+  <div class="normalDiv"></div>
+  <div class="normalDiv"></div>
+  <div class="normalDiv"></div>
+</div>
+
+</body>
+</html>
